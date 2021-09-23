@@ -8,8 +8,7 @@
 <!-- ~~hello world~~ -->
 **This text is _extremely_ important**
 ***This text is extremely important***
-> Pardon my french
-> 
+> Pardon my french  
 ```
 git status
 git add
@@ -21,8 +20,18 @@ git commit
 ```
 command: ctrl + b
 example: **Bold text**
-```\
-**Italic text**
-```ctrl + i```\
-**Strikethrough**
-``` example: ~~This was mistaken text~~ ```
+```
+> output: **this is bold text**\
+
+**Italic text** 
+```
+command: ctrl + i
+example: *Bold text*
+```
+> output: *this is bold text*\
+
+**Strikethrough Text**
+```
+example: ~~Bold text~~
+```
+> output: ~~this is bold text~~\
