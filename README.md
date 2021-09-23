@@ -105,3 +105,93 @@ Here are some examples for using relative links to display an image.
 | In issues, pull requests and comments of the repository | `../blob/main/assets/images/electrocat.png` |
 | In a `.md` file in another repository | `/../../../../github/docs/blob/main/assets/images/electrocat.png` |
 | In issues, pull requests and comments of another repository | `../../../github/docs/blob/main/assets/images/electrocat.png?raw=true` |
+
+## Horizontal line
+```
+syntax: ---
+```
+> output: 
+---
+
+## Lists
+You can make an unordered list by preceding one or more lines of text with `-` or `*`.
+```
+- George Washington
+- John Adams
+- Thomas Jefferson
+```
+> output: 
+- George Washington
+- John Adams
+- Thomas Jefferson
+
+```
+1. James Madison
+2. James Monroe
+3. John Quincy Adams
+```
+> output:
+1. James Madison
+2. James Monroe
+3. John Quincy Adams
+
+### Nested Lists
+
+You can create a nested list by indenting one or more list items below another item.
+
+To create a nested list using the web editor on GitHub or a text editor that uses a monospaced font, like Atom, you can align your list visually. Type space characters in front of your nested list item, until the list marker character (`-` or `*`) lies directly below the first character of the text in the item above it.
+
+```
+1. First list item
+   - First nested list item
+     - Second nested list item
+```
+> output: 
+1. First list item
+   - First nested list item
+     - Second nested list item
+
+To create a nested list in the comment editor on GitHub, which doesn't use a monospaced font, you can look at the list item immediately above the nested list and count the number of characters that appear before the content of the item. Then type that number of space characters in front of the nested list item.
+
+In this example, you could add a nested list item under the list item `100. First list item` by indenting the nested list item a minimum of five spaces, since there are five characters (`100.` ) before `First list item`.
+
+```
+100. First list item
+     - First nested list item
+```
+> output:
+100. First list item
+     - First nested list item
+
+You can create multiple levels of nested lists using the same method. For example, because the first nested list item has seven spaces (`␣␣␣␣␣-␣`) before the nested list content `First nested list item`, you would need to indent the second nested list item by seven spaces.
+
+```
+100. First list item
+     - First nested list item
+       - Second nested list item
+```
+
+> output: 
+100. First list item
+     - First nested list item
+       - Second nested list item
+
+## Task lists
+To create a task list, preface list items with a regular space character followed by `[ ]`. To mark a task as complete, use `[x]`.
+
+```
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
+```
+
+> output: 
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
+
+If a task list item description begins with a parenthesis, you'll need to escape it with `\`:
+
+`- [ ] \(Optional) Open a followup issue`
+
+
