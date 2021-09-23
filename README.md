@@ -18,7 +18,11 @@ git commit
 ## Readme file styling
 
 **Bold text** 
-```ctrl + b```\
-_Italic text_
+```
+command: ctrl + b
+example: **Bold text**
+```\
+**Italic text**
 ```ctrl + i```\
-~~This was mistaken text~~
+**Strikethrough**
+``` example: ~~This was mistaken text~~ ```
