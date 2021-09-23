@@ -98,4 +98,10 @@ GitHub supports embedding images into your issues, pull requests, discussions, c
 
 Here are some examples for using relative links to display an image.
 
-
+| Context | Relative Link |
+| --- | --- |
+| In a `.md` file on the same branch | `/assets/images/electrocat.png` |
+| In a `.md` file on another branch | `/../main/assets/images/electrocat.png` |
+| In issues, pull requests and comments of the repository | `../blob/main/assets/images/electrocat.png` |
+| In a `.md` file in another repository | `/../../../../github/docs/blob/main/assets/images/electrocat.png` |
+| In issues, pull requests and comments of another repository | `../../../github/docs/blob/main/assets/images/electrocat.png?raw=true` |
