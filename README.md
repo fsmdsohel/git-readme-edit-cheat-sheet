@@ -1,12 +1,4 @@
-<!-- 
-**This text is _extremely_ important**
-***This text is extremely important*** -->
-> Pardon my french  
-```
-git status
-git add
-git commit
-```
+
 ## Readme file styling
 
 **Heading**
